@@ -1,0 +1,116 @@
+.card-avatar {
+    margin: 20px 0 0 0;
+    padding: 10px 0 10px 10px;
+    box-shadow: 0 0 5px 0 lightgrey;
+    border-radius: 3px;
+    text-align: left;
+    position: relative;
+
+    @media screen and (min-width: 1024px) {
+        margin: 15px 0;
+        width: 32%;
+        display: inline-block;
+        float: left;
+        min-height: 60px;
+
+        &--last-item {
+            margin-right: 0;
+            float: right;
+        }
+
+        &--second-item {
+            float: none;
+        }
+    }
+
+    span.label {
+        display: inline-block;
+        padding-right: 5px;
+    }
+
+    span.count {
+        display: inline-block;
+
+        @media screen and (min-width: 1024px) {
+            text-align: left;
+        }
+    }
+
+    &--last-item {
+        margin-right: 0;
+    }
+}
+
+.card-avatar-heading {
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: middle;
+    margin-left: 5px;
+    width: 83%;
+
+    @media screen and (max-width: 375px) {
+        padding: 0 0 15px 0;
+    }
+}
+
+.card-avatar-main {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: super;
+    max-width: 125px;
+    color: #000;
+
+    @media screen and (max-width: 375px) {
+        font-size: 11px;
+        vertical-align: bottom;
+    }
+}
+
+.last-updated {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    font-size: 9px;
+    color: darkblue;
+    font-weight: 500;
+
+    @media screen and (max-width: 375px) {
+        display: none;
+    }
+
+    &--375 {
+        display: none;
+
+        @media screen and (max-width: 375px) {
+            display: block;
+            bottom: 5px;
+        }
+    }
+}
+
+.card-avatar-sub {
+    font-size: 11px;
+    display: inline-block;
+    padding-right: 30px;
+    font-weight: 500;
+
+    @media screen and (max-width: 375px) {
+        font-size: 9px;
+        padding-right: 20px;
+    }
+
+    &--confirmed {
+        color: #2196f3;
+    }
+
+    &--active {
+        color: #4caf50;
+    }
+
+    &--deaths {
+        color: #f44336;
+        padding-right: 0;
+    }
+}

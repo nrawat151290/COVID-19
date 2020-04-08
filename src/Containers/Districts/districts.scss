@@ -1,0 +1,13 @@
+.districts {
+  &__parent-state {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  &__no-of-districts {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 10px;
+  }
+}

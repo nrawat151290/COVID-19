@@ -1,0 +1,77 @@
+.covid-container {
+    padding: 10px 0;
+
+    // display: none;
+
+    // @media screen and (min-width: 375px) {
+    //     display: block;
+    // }
+
+    h2 {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .india {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .totals {
+        text-align: center;
+        padding: 20px 0;
+
+        &__lastupdated {
+            font-size: 11px;
+            margin-bottom: 20px;
+            font-weight: 500;
+            color: darkblue;
+        }
+
+        &__elem {
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        &__confirmed {
+            color: #2196f3;
+        }
+
+        &__active {
+            color: #4caf50;
+        }
+
+        &__recovered {
+            color: #ffa726;
+        }
+
+        &__deaths {
+            margin-right: 0;
+            color: #f44336;
+        }
+
+        .label {
+            font-size: 13px;
+
+            @media screen and (max-width: 375px) {
+                font-size: 10px;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 16px;
+            }
+        }
+
+        .count {
+            font-size: 12px;
+
+            @media screen and (min-width: 1024px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 375px) {
+                font-size: 10px;
+            }
+        }
+    }
+}

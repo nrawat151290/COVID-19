@@ -1,0 +1,53 @@
+.districts-list {
+    list-style-type: none;
+    padding: 0 20px;
+    margin-top: 30px;
+
+    @media screen and (min-width: 1024px) {
+        padding: 0 15%;
+    }
+
+    .districts-list-item {
+        padding: 10px;
+        display: block;
+        margin-bottom: 15px;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 14px;
+
+        &--low {
+            background-color: #4caf50;
+        }
+
+        &--avg {
+            background-color: #ffa726;
+        }
+
+        &--high {
+            background-color: #f44336;
+        }
+
+        &__name {
+            display: inline-block;
+            float: left;
+            padding: 3px;
+            font-weight: 500;
+        }
+
+        &__count {
+            display: inline-block;
+            float: right;
+            padding: 3px;
+            color: #000;
+            font-weight: 500;
+            border-radius: 25px;
+            min-width: 50px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+    }
+}
